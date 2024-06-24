@@ -1,0 +1,96 @@
+“VideoShare” is an online video sharing platform. The company has decided to rate its users channels based on the sum total of the number of views received online and the subscribers. The sum total is reffered to as user points. The rating will be given according to the below charts:
+
+User points ratings: 30-50 Average 51-60 Good 61-80 Excellent 81-100 Outstanding
+
+The whole process is automated and it can be carried out by the company’s system.
+
+Input Format
+
+The input consists of an integer userpoints representing the calculated points
+
+Constraints
+
+30>= userpoints <=100
+
+Output Format
+
+Print rating if not possible print "Invalid Input"
+
+Sample Input 0
+
+77
+Sample Output 0
+
+Excellent
+Submissions: 256
+Max Score: 20
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+​
+4
+public class Solution {
+5
+​
+6
+    public static void main(String[] args) {
+7
+         Scanner s=new Scanner(System.in);
+8
+       int n;
+9
+        n=s.nextInt();
+10
+        if(n>=30&&n<=50)
+11
+        {
+12
+            System.out.println("Average ");
+13
+        }
+14
+        else if(n>=51&&n<=60)
+15
+        {
+16
+            System.out.println("Good");
+17
+        }
+18
+        else if(n>=61&&n<=80)
+19
+        {
+20
+            System.out.println("Excellent");
+21
+        }
+22
+        else if(n>=81&&n<=100)
+23
+        {
+24
+            System.out.println("Outstanding");
+25
+        }
+26
+        else
+27
+            System.out.println("Invalid Input");
+28
+    }
+29
+}
+30
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+31
+    }
+32
+}
